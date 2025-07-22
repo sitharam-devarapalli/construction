@@ -919,6 +919,7 @@
   position: relative;
   z-index: 2;
   max-width: 500px;
+  background: #fff;
 }
 
 .home-contact-title {
