@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raghurama Residency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+
+    <header class="header-section topbar d-flex">
+        <!-- LEFT SIDE: LOGO + MENU -->
+        <div class="left-bar flex-grow-1 d-flex align-items-center justify-content-between">
+            <div class="logo-box d-flex align-items-center">
+                <img src="logo.png" alt="Logo" class="img-fluid" style="max-height: 40px;" />
+            </div>
+            <nav class="d-none d-lg-block">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Our Works</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Page 1</a></li>
+                            <li><a class="dropdown-item" href="#">Page 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- RIGHT SIDE: MINI LOGO + ICONS -->
+        <div class="right-bar d-flex align-items-center px-3">
+            <div class="d-flex align-items-center justify-content-center mini-logo-wrapper me-3">
+                <img src="mini-logo.png" alt="Mini Logo" class="img-fluid" style="max-height: 30px;" />
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn-toggle d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasMenu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+
+                    <!-- Pages Dropdown -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#pagesCollapse" role="button"
+                            aria-expanded="false" aria-controls="pagesCollapse">
+                            Our Works <i class="bi bi-chevron-down float-end"></i>
+                        </a>
+                        <div class="collapse" id="pagesCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link" href="#">Page 1</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Page 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <footer class="footer-section bg-dark-green text-light">
+        <div class="container-fluid p-0">
+            <div class="row">
+
+                <!-- Logo & About -->
+                <div class="col-md-3 mb-4 footer-brand">
+                    <div class="footer-logo mb-3">
+                        <img src="logo.png" alt="Arch Logo" class="img-fluid" style="max-height: 40px;" />
+                    </div>
+                    <p class="footer-text small">
+                        Cillum facilisi. Proident turpis? Fringilla? Tempore potenti, voluptatum, quisque pulvinar
+                        aliqua vero.
+                    </p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-3 mb-4 footer-links">
+                    <h6 class="footer-heading">Useful Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">News & Articles</a></li>
+                        <li><a href="#" class="footer-link">Legal Notice</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-md-3 mb-4 footer-support">
+                    <h6 class="footer-heading">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Contact Us</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Parent Community</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3 mb-4 footer-contact">
+                    <h6 class="footer-heading">Contact Information</h6>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li><i class="bi bi-geo-alt-fill me-2"></i> 3557 Derek Drive, Orlando, Florida</li>
+                        <li><i class="bi bi-telephone-fill me-2"></i> +1 456 657 887</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i> info@domain.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Icons Section -->
+            <div class="row d-flex justify-content-between align-items-center footer-social-wrapper">
+                <div class="col-md-6 text-center text-md-start footer-social">
+                    <a href="#" class="footer-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="footer-icon"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="footer-icon"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="footer-icon"><i class="bi bi-youtube"></i></a>
+                </div>
+                <div class="col-md-6 text-center text-md-end footer-copy">
+                    <p class="mb-0 small">&copy; 2025 <a href="https://digispheretech.in/" target="_blank  " class="digisphere">Digisphere</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
