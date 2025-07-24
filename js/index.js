@@ -48,3 +48,18 @@ document.getElementById('prevService').addEventListener('click', () => {
     carousel.style.transform = `translateX(-${scrollIndex * cardWidth}px)`;
   }
 });
+
+
+// our teams section js 
+document.addEventListener("DOMContentLoaded", function () {
+  const customCarousel = document.querySelector('#customTeamCarousel');
+  const nextBtn = document.querySelector('.custom-carousel-next');
+  const prevBtn = document.querySelector('.custom-carousel-prev');
+
+  const bsCustomCarousel = new bootstrap.Carousel(customCarousel, {
+    interval: false
+  });
+
+  nextBtn.addEventListener('click', () => bsCustomCarousel.next());
+  prevBtn.addEventListener('click', () => bsCustomCarousel.prev());
+});
