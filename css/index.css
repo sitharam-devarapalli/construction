@@ -2089,7 +2089,8 @@
 .about-achievements-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 0; /* Optional: adjust spacing between cards */
+  gap: 0;
+  /* Optional: adjust spacing between cards */
   text-align: center;
 }
 
@@ -2108,6 +2109,7 @@
   background-color: #eaf6ff;
   color: #1c4b44;
 }
+
 .bg-white-box {
   background-color: #ffffff;
   color: #eaf6ff;
@@ -2119,17 +2121,21 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .green-text {
   color: #1c4b44;
 }
+
 .dark-text {
   color: #0f1f3e;
 }
+
 .about-achievements-text {
   font-size: 15px;
   line-height: 1.5;
   margin: 0;
 }
+
 .about-achievements-icon img {
   width: 90px;
   height: 90px;
@@ -2141,6 +2147,7 @@
   background-color: #eaf6ff;
   transform: translateY(-5px);
 }
+
 .icon-green img {
   filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(120deg) brightness(1.2);
   /* tweak if needed to match your exact green (#1c4b44) */
@@ -2153,27 +2160,462 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 767.98px) {
   .about-achievements-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .about-achievements-box {
     padding: 20px 10px;
     min-height: 240px;
   }
+
   .about-achievements-icon img {
     width: 40px;
     height: 40px;
   }
+
   .about-achievements-number {
     font-size: 22px;
   }
+
   .about-achievements-text {
     font-size: 14px;
   }
 }
+
 @media (max-width: 480px) {
   .about-achievements-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+
+/* our services page css  */
+.service-section {
+  padding: 50px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Service Image */
+.service-image img {
+  border-radius: 25px !important;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+.service-content h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1c1c1c;
+}
+
+.service-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1c4b44;
+}
+
+.service-content p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* List Styling */
+.service-list ul li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Steps Section */
+.service-step {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+  padding: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.service-step h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1c4b44;
+}
+
+.service-step p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+
+/* Sidebar Boxes */
+.service-sidebar,
+.service-social,
+.service-help {
+  border-radius: 25px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.service-sidebar {
+  background: #ffeedb !important;
+}
+
+.service-sidebar-title {
+  font-weight: 600;
+  font-size: 21px;
+  color: #1c4b44;
+}
+
+.service-category li {
+  padding: 8px 0;
+}
+
+.service-category li a {
+  color: #222;
+  background: #fff;
+  border-radius: 25px;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.service-category li a:hover {
+  color: #f36f21;
+  padding-left: 25px;
+}
+
+/* Social Icons */
+.service-social {
+  background-color: #ffeedb !important;
+}
+
+.service-social h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c4b44;
+}
+
+.service-social i {
+  color: #1c4b44;
+  transition: 0.3s;
+  background-color: #fff;
+  /* light orange background */
+  padding: 10px;
+  border-radius: 50%;
+  /* make it circular */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-social i:hover {
+  color: #f36f21;
+  transform: scale(1.1);
+}
+
+/* Help Box */
+.service-help {
+  background-color: #1c1c1c;
+}
+
+.service-help-icon i {
+  color: #ffa500;
+}
+
+.service-help p,
+.service-help h5 {
+  margin-bottom: 10px;
+}
+
+.service-help a.btn {
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.fade-out {
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.service-content {
+  transition: opacity 0.3s ease;
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: #f36f21;
+  border: none;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: #d85c17;
+  color: #fff;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .service-section {
+    padding: 30px 15px;
+  }
+
+  .service-image img {
+    height: 200px;
+    border-radius: 15px !important;
+  }
+
+  .service-content h2 {
+    font-size: 22px;
+  }
+
+  .service-content h4 {
+    font-size: 18px;
+  }
+
+  .service-step {
+    margin-bottom: 20px;
+  }
+
+  .service-sidebar,
+  .service-social,
+  .service-help {
+    margin-top: 30px;
+  }
+
+  .service-step h6 {
+    font-size: 15px;
+  }
+
+  .service-step p {
+    font-size: 13px;
+  }
+
+  .service-social i {
+    padding: 8px;
+    font-size: 16px !important;
+  }
+
+  .service-category li a {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .btn-warning {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .service-help h5 {
+    font-size: 18px;
+  }
+}
+
+/* Tablets (768px to 991px) — Same as Laptop View */
+@media (min-width: 768px) and (max-width: 991px) {
+  .service-section {
+    padding: 50px 30px;
+  }
+
+  .service-image img {
+    height: 250px;
+  }
+
+  .service-content h2 {
+    font-size: 26px;
+  }
+
+  .service-step {
+    padding: 20px;
+  }
+
+  .service-step h6 {
+    font-size: 16px;
+  }
+
+  .service-step p {
+    font-size: 14px;
+  }
+
+  .service-category li a {
+    font-size: 15px;
+  }
+
+  .btn-warning {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+/* certification and permission section css  */
+.certification-section-alt {
+  background: #ffffff;
+  padding: 50px;
+}
+
+.certification-title-alt {
+  font-size: 36px;
+  font-weight: 700;
+  color: #102c57;
+}
+
+.certification-subtitle-alt {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.cert-box {
+  position: relative;
+  background: #fdfdfd;
+  padding: 30px 20px 25px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  text-align: left;
+}
+
+.cert-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+}
+
+.cert-box-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #f36f21;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.icon-img {
+  width: 34px;
+  height: 34px;
+  filter: brightness(0) invert(1);
+}
+
+.cert-box-content h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1c2c4c;
+  margin-bottom: 10px;
+}
+
+.cert-box-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Ribbon Accent */
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right, #f36f21, #ff9d4c);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+@media (max-width: 991px) {
+  .certification-section-alt {
+    padding: 40px 20px;
+  }
+
+  .certification-title-alt {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .certification-subtitle-alt {
+    font-size: 15px;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .cert-box {
+    padding: 25px 18px 20px 18px;
+  }
+
+  .cert-box-content h5 {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .cert-box-content p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .cert-box-icon {
+    margin: 0 auto 15px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .certification-section-alt {
+    padding: 30px 15px;
+  }
+
+  .certification-title-alt {
+    font-size: 24px;
+  }
+
+  .certification-subtitle-alt {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .cert-box {
+    padding: 20px 15px 18px 15px;
+    text-align: center;
+  }
+
+  .cert-box-content h5 {
+    font-size: 16px;
+  }
+
+  .cert-box-content p {
+    font-size: 13px;
+  }
+
+  .icon-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .cert-box-icon {
+    width: 54px;
+    height: 54px;
   }
 }
